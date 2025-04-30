@@ -2,11 +2,7 @@
     <b>
         <a href="https://github.com/jerrylin5168/PIGAN">GitHub</a>
         | 
-        <a href="https://arxiv.org/abs/your_arxiv_paper_link">ArXiv</a>
-        | 
-        <a href="#Get-Start">Get Started</a>
-        | 
-        <a href="https://youtu.be/HWAT0OzGwg8">Video</a>
+        <a href="https://youtu.be/HWAT0OzGwg8">Demo Video</a>
     </b>
 </p>
 
@@ -62,23 +58,16 @@ PIGAN is a GAN-based model designed to generate videos from a single portrait im
     <iframe width="700" height="394" src="https://www.youtube.com/embed/HWAT0OzGwg8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
-## Get Started
+## Citation
 
-### 1). Installation
+If you find this code useful, please cite our paper:
 
-#### Requirements
-
-* Python 3
-* PyTorch 1.10+
-* CUDA 11.1
-
-#### Conda Installation
-
-```bash
-# 1. Create a conda virtual environment.
-conda create -n PIGAN python=3.8
-conda activate PIGAN
-conda install -c pytorch pytorch=1.10 torchvision cudatoolkit=11.1
-
-# 2. Install other dependencies
-pip install -r requirements.txt
+```tex
+@misc{lin2025pigan,
+      title={PIGAN: Personality Informed Generative Adversarial Network for Portrait to Video}, 
+      author={Jerry Lin and team},
+      year={2025},
+      eprint={2109.08379},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
