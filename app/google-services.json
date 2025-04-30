@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "106860173027",
+    "project_id": "pigan-403404",
+    "storage_bucket": "pigan-403404.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:106860173027:android:4403d4f76c2783533017d6",
+        "android_client_info": {
+          "package_name": "com.example.piganapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmI8jPO8R6N70dwXLU7INJB2--nSEkj50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

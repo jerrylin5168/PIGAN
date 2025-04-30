@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_purple_gradient_futuristic_technology_background_instagram_story"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".EmotionActivity">
+
+
+    <!-- Here, we set the layout for the emotion inputs screen -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Spinner
+            android:id="@+id/emotion_spinner"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_weight="0"
+            android:background="@drawable/border1"
+            android:spinnerMode="dropdown" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonEmotion"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/emotion_spinner"
+            android:backgroundTint="@color/black"
+            android:clickable="true"
+            android:foreground="@drawable/info_floating"
+            android:tooltipText="Select the desired emotion for the subject." />
+
+    </RelativeLayout>
+    <!-- spinner/dropdown for emotion selection -->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <Spinner
+            android:id="@+id/intensity_spinner"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_weight="0"
+            android:background="@drawable/border1"
+            android:spinnerMode="dropdown" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonCameraEmotionIntensity"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@id/intensity_spinner"
+            android:backgroundTint="@color/black"
+            android:clickable="true"
+            android:foreground="@drawable/info_floating"
+            android:tooltipText="Select the desired intensity for the selected emotion." />
+
+    </RelativeLayout>
+    <!-- spinner/dropdown for emotion intensity selection -->
+
+    <!-- Button to go to the next screen -->
+    <Button
+        android:id="@+id/nextemotion_button"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0"
+        android:background="@drawable/border2"
+        android:text="Next" />
+
+    <!-- Button to go back to previous screen (image upload screen) -->
+    <Button
+        android:id="@+id/backemotion_button"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="50dp"
+        android:layout_weight="0"
+        android:background="@drawable/border2"
+        android:text="Go Back to Image Upload" />
+
+</LinearLayout>

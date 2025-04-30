@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/blue_purple_gradient_futuristic_technology_background_instagram_story"
+    tools:context=".MainActivity">
+
+
+    <!-- Here, we set the layout for the image upload screen -->
+    <!-- Button for opening the device camera -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/camera_button"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border2"
+            android:layout_weight="1"
+            android:text="Camera" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonCamera"
+            android:layout_marginTop="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/camera_button"
+            android:layout_marginLeft="1dp"
+            android:backgroundTint="@color/black"
+            android:foreground="@drawable/info_floating"
+            android:clickable="true"
+            android:tooltipText="Use the device camera to take a portrait image in real time."
+            android:background="@drawable/info_floating"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/gallery_button"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border2"
+            android:layout_weight="1"
+            android:text="Upload Image" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonGallery"
+            android:layout_marginTop="10dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/gallery_button"
+            android:layout_marginLeft="1dp"
+            android:clickable="true"
+            android:backgroundTint="@color/black"
+            android:foreground="@drawable/info_floating"
+            android:tooltipText="Upload an image from your device's camera gallery."
+            android:background="@drawable/info_floating"/>
+
+    </RelativeLayout>
+
+
+    <!-- Button for opening camera gallery -->
+    
+    <FrameLayout
+        android:id="@+id/camera_frame"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+
+        <!-- Live camera feed -->
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewView"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:visibility="gone" />
+
+        <!-- ImageView for displaying uploaded image -->
+        <ImageView
+            android:id="@+id/click_image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="100dp"
+            android:contentDescription="TODO" />
+
+        <View
+            android:id="@+id/faceOverlay"
+            android:layout_width="250dp"
+            android:layout_height="290dp"
+            android:layout_gravity="center"
+            android:background="@drawable/face_overlay_v2"
+            android:alpha="0.6"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/countdown_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="48sp"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:text="5" />
+
+    </FrameLayout>
+    <!-- Button to go the next screen -->
+    <Button
+        android:id="@+id/navigate_button"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:background="@drawable/border2"
+        android:layout_weight="1"
+        android:text="Next" />
+
+
+</LinearLayout>

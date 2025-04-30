@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <!-- Face outline (circle) -->
+    <path
+        android:strokeColor="#66FFFFFF"
+        android:strokeWidth="10"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M100,10
+                          A90,90 0 1,1 99.9,10" />
+
+    <!-- Left eye -->
+    <path
+        android:fillColor="#66FFFFFF"
+        android:pathData="M60,70
+                          a5,5 0 1,0 0.1,0" />
+
+    <!-- Right eye -->
+    <path
+        android:fillColor="#66FFFFFF"
+        android:pathData="M140,70
+                          a5,5 0 1,0 0.1,0" />
+
+    <!-- Mouth (hollow circle like face outline) -->
+    <path
+        android:strokeColor="#66FFFFFF"
+        android:strokeWidth="4"
+        android:fillColor="@android:color/transparent"
+        android:pathData="M100,130
+                          a10,10 0 1,0 0.1,0" />
+
+</vector>

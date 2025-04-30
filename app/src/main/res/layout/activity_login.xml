@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/blue_purple_gradient_futuristic_technology_background_instagram_story"
+    android:padding="16dp">
+
+    <!-- Here, we set the layout for the login screen -->
+    <!-- Textview for an introduction message and an informative paragraph -->
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="130dp"
+        android:textSize="45dp"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:text="Hi! Welcome to PIGAN!" />
+
+    <!-- EditText for entering login credentials: email and password -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="PIGAN (Personality Informed Generative Adversarial Network) is a generative adversarial network model that takes a single subject portrait image as input, and the model will generate an output of a video/animation of that subject with certain embedded personality traits as indicated by the user. To use this model, please enter the appropriate credentials below and log in."
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <!-- Button to initiate login -->
+
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border2"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/goToRegisterButton"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border2"
+        android:text="Register" />
+
+
+
+
+
+</LinearLayout>

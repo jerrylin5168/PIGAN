@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">PIGAN</string>
+
+    <string name="tutorial1">After logging in, the screen shown below is the first screen you will see. This is where you as the user will upload your portrait image. However, let’s point out a few important features to be aware of while using the app. Firstly, throughout the app you will see “tooltip” icons (the circular purple elements with the letter “i”) right next to some of the elements of the app that you as the user will be interacting with. Long-press on these tooltip icons to show a pop-up message that provides essential information about that component of the app (an example of this message is shown below).
+</string>
+    <string name="tutorial2">Another component to be aware of when using the app is the main toolbar located at the top of each screen of the app. Pressing on the three dots on the top right corner will display a menu of options. Here, there is an option for the user to “Log out” of the app, two options for the tutorial on how to use the app (“Read tutorial” and “Watch tutorial”), and an option to “Close app” which closes the app.
+</string>
+    <string name="tutorial3">To actually begin using the app as intended, the user must first upload an image to the app. The user cannot proceed to the next screen until an image has successfully been uploaded. Attempting to use the “NEXT” button before uploading an image will not do anything and the user will see a message directing them to upload an image first as shown below.
+</string>
+    <string name="tutorial4">The user is presented with two different options for uploading their desired image. To upload an image by capturing an image in real time with the device’s camera, press on the “CAMERA” button to start the camera and you will see a view of the camera on the main screen as shown below. There is an outline that resembles a face to help direct the user where to align their face relative to the camera, and there is a countdown timer (5 seconds) that lets the user know when the camera will capture the image automatically. After the image has been captured, the final captured image will be displayed on the main screen, and a message should appear indicating that the image has been successfully uploaded as shown below.
+</string>
+    <string name="tutorial5">To upload an image from storage, press on the “UPLOAD IMAGE” button to access the default camera gallery and select your desired image. Once the image has been selected, the camera gallery will close and you will see the selected image displayed on the screen followed by a message indicating that the image was uploaded successfully (similar to what was shown above when capturing an image with the camera).
+</string>
+    <string name="tutorial6">Once an image has been successfully uploaded, using the “NEXT” button will navigate the user to the next screen of the app as shown below. Here, the user will use the two dropdown menus to select the emotion and the associated emotion level/intensity to be portrayed by the subject in the final generated video. There are five emotions and five levels that the user can choose from on each dropdown menu, respectively.
+</string>
+    <string name="tutorial7">Once the user is satisfied with their selections for the emotion and emotion level, using the “NEXT” will navigate the user to the next screen of the app as shown below; a message should also appear indicating to the user that the data for the emotion selections was successfully uploaded. Here, the user will execute the generation of a video that utilizes all their previous inputs that were uploaded. The user should note that there is an option to “SAVE VIDEO”; however, attempting to use this function will only reveal a message indicating to the user that there is no current video to save.
+</string>
+    <string name="tutorial8">To execute the generation of a video, the user should use the “GENERATE” button and a loading screen will appear indicating to the user that a video is currently being generated (shown below). Once the generation is complete, the final video will be displayed to the user on the main screen with the media player located at the bottom of the screen (shown below).
+</string>
+    <string name="tutorial9">This concludes the tutorial. Enjoy using our app!
+</string>
+
+
+    <string-array name="emotions_array">
+        <item>Happy</item>
+        <item>Angry</item>
+        <item>Sad</item>
+        <item>Fearful</item>
+        <item>Surprised</item>
+    </string-array>
+
+    <string-array name="intensities_array">
+        <item>Level 1</item>
+        <item>Level 2</item>
+        <item>Level 3</item>
+        <item>Level 4</item>
+        <item>Level 5</item>
+    </string-array>
+</resources>
