@@ -10,7 +10,7 @@
 
 The source code for the Senior Design project "[PIGAN: Personality Informed Generative Adversarial Network for Portrait to Video](https://arxiv.org/abs/your_arxiv_paper_link)" (2025).
 
-PIGAN is a GAN-based model designed to generate videos from a single portrait image while embedding personality traits into the animation. This model enables:
+PIGAN is a GAN-based model that combines two distinct GAN architectures—**PI-Render** ([GitHub](https://github.com/sicxu/PI-Render)) and **Deep3DFaceRecon_pytorch** ([GitHub](https://github.com/microsoft/Deep3DFaceReconstruction))—to generate animated videos from a single portrait image. By embedding personality traits into the animation process, PIGAN enables the generation of realistic facial expressions and motions, allowing for personalized, emotion-driven video creation. This project leverages these two GANs to produce dynamic facial reenactments, making it a powerful tool for applications in personalized media, entertainment, and human-computer interaction.
 
 * **Emotion-based Video Generation**
   <p align='center'>  
@@ -60,14 +60,14 @@ PIGAN is a GAN-based model designed to generate videos from a single portrait im
 
 ## Citation
 
-If you find this code useful, please cite our paper:
+If you find this code useful, please cite the following papers:
+
+For **PI-Render**:
 
 ```tex
-@misc{lin2025pigan,
-      title={PIGAN: Personality Informed Generative Adversarial Network for Portrait to Video}, 
-      author={Jerry Lin and team},
-      year={2025},
-      eprint={2109.08379},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@misc{sicxu2020pire,
+  author = {Sicxu},
+  title = {PI-Render: A Personality-Informed Portrait Image Generation Framework},
+  year = {2020},
+  url = {https://github.com/sicxu/PI-Render}
 }
