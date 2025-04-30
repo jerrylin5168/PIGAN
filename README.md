@@ -1,6 +1,6 @@
 <p align='center'>
     <b>
-        <a href="https://your_project_website_link.com">Website</a>
+        <a href="https://github.com/jerrylin5168/PIGAN">GitHub</a>
         | 
         <a href="https://arxiv.org/abs/your_arxiv_paper_link">ArXiv</a>
         | 
@@ -18,21 +18,15 @@ PIGAN is a GAN-based model designed to generate videos from a single portrait im
 
 * **Emotion-based Video Generation**
   <p align='center'>  
-    <video width="700" controls>
-        <source src="PIGAN/demo_images/Generated_Video_1744822720017.MP4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <img src="https://github.com/jerrylin5168/PIGAN/raw/main/demo_images/Generated_Video_1744822720017.gif" width="700"/>
   </p>
   <p align='center'>  
-    <b>Emotion-based Portrait-to-Video Generation</b> 
+    <b>Emotion-based Portrait-to-Video Generation</b>
   </p>
-  
+
 * **Personality Embedding in Animations**
-  <p align='center'> 
-    <video width="700" controls>
-        <source src="PIGAN/demo_images/Generated_Video_1744822756935.MP4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+  <p align='center'>  
+    <img src="https://github.com/jerrylin5168/PIGAN/raw/main/demo_images/Generated_Video_1744822756935.gif" width="700"/>
   </p>
   <p align='center'>  
     <b>Personality-Informed Animation Control</b> 
@@ -40,10 +34,7 @@ PIGAN is a GAN-based model designed to generate videos from a single portrait im
 
 * **Facial Expression Manipulation**
   <p align='center'>  
-    <video width="700" controls>
-        <source src="PIGAN/demo_images/Generated_Video_1744822796613.MP4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <img src="https://github.com/jerrylin5168/PIGAN/raw/main/demo_images/Generated_Video_1744822796613.gif" width="700"/>
   </p>
   <p align='center'>  
     <b>Facial Expression Control</b> 
@@ -51,10 +42,7 @@ PIGAN is a GAN-based model designed to generate videos from a single portrait im
 
 * **Motion Imitation**
   <p align='center'>  
-    <video width="700" controls>
-        <source src="PIGAN/demo_images/Generated_Video_1744822837077.MP4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <img src="https://github.com/jerrylin5168/PIGAN/raw/main/demo_images/Generated_Video_1744822837077.gif" width="700"/>
   </p>
   <p align='center'>  
     <b>Same & Cross-identity Reenactment</b> 
@@ -62,10 +50,7 @@ PIGAN is a GAN-based model designed to generate videos from a single portrait im
 
 * **Audio-Driven Facial Reenactment**
   <p align='center'>  
-    <video width="700" controls>
-        <source src="PIGAN/demo_images/Generated_Video_1744822874770.MP4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <img src="https://github.com/jerrylin5168/PIGAN/raw/main/demo_images/Generated_Video_1744822874770.gif" width="700"/>
   </p>
   <p align='center'>  
     <b>Audio-Driven Reenactment</b> 
@@ -76,3 +61,24 @@ PIGAN is a GAN-based model designed to generate videos from a single portrait im
 <p align='center'>
     <iframe width="700" height="394" src="https://www.youtube.com/embed/HWAT0OzGwg8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
+
+## Get Started
+
+### 1). Installation
+
+#### Requirements
+
+* Python 3
+* PyTorch 1.10+
+* CUDA 11.1
+
+#### Conda Installation
+
+```bash
+# 1. Create a conda virtual environment.
+conda create -n PIGAN python=3.8
+conda activate PIGAN
+conda install -c pytorch pytorch=1.10 torchvision cudatoolkit=11.1
+
+# 2. Install other dependencies
+pip install -r requirements.txt
