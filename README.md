@@ -71,3 +71,10 @@ For **PI-Render**:
   year = {2020},
   url = {https://github.com/sicxu/PI-Render}
 }
+@misc{feng2020deep3d,
+  author = {Feng, Z. and Zhang, Y. and Li, Z.},
+  title = {Deep3DFaceRecon_pytorch: A 3D Face Reconstruction Method},
+  year = {2020},
+  url = {https://github.com/microsoft/Deep3DFaceReconstruction}
+}
+
